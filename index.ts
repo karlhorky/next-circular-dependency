@@ -10,10 +10,10 @@ const defaultOptions = {
   exclude: /node_modules/,
   include: /.*/,
   /**
-   * Wether to fail the build if there are circular dependencies.
-   * @default false
+   * Whether to fail the build if there are circular dependencies.
+   * @default true
    */
-  failOnError: false,
+  failOnError: true,
   allowAsyncCycles: false,
   cwd: process.cwd(),
   /**
