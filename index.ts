@@ -47,9 +47,9 @@ const defaultOptions = {
         compilation.name as keyof typeof detectedCircularDependencies
       ].length;
     if (detectedCircularDependenciesCount === 0) {
-      console.debug(`✅ No circular dependencies found in ${compilation.name}`)
+      console.debug(`✅ No circular dependencies detected in ${compilation.name}`)
     } else {
-      console.error(`❌ ${detectedCircularDependenciesCount} circular dependencies found in ${compilation.name}`)
+      console.error(`❌ ${detectedCircularDependenciesCount} circular dependencies detected in ${compilation.name}`)
     }
 
     // Exit with code 1 if circular dependencies detected during the last compilation (currently `client`, as of Next.js 15.3.2)
